@@ -1,0 +1,15 @@
+body
+{
+    background: url('fond_jaune.png');
+    font-family: Arial,verdana,'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+h1
+{
+text-align: center;
+color: green;
+}
+:required
+{
+    background-color: whitesmoke;
+}

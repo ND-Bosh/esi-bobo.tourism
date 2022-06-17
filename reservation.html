@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reservation.css" />
+	<title>Réservation d'Hôtel</title>
+</head>
+<body>
+
+<h1>Veuillez s'il vous plait remplir ce formulaire pour séjouré dans un Hôtel !</h1>
+
+<form method="post" action="traitement.php">
+
+
+   
+  
+    <p>
+        <label for="nom">Votre Nom :</label>
+        <input type="text" name="nom" id="nom" placeholder="Ex : Kindo" size="30" maxlength="20" required/>
+    </p>
+
+     <p>
+        <label for="prenom">Votre Prénom :</label>
+        <input type="text" name="prenom" id="prenom" placeholder="Ex : Madou" size="30" maxlength="50" required/>
+    </p>
+
+     <p>
+        <label for="e-mail">Votre e-mail :</label>
+        <input type="email" name="e-mail" id="e-mail" placeholder="Ex : ***@gmail.com" size="30" />
+    </p>
+
+   <p>
+       Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+       <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">18-25 ans</label><br />
+       <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">25-35ans</label><br />
+       <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">35-45 ans</label><br />
+       <input type="radio" name="age" value="medium45-60" id="medium45-60" /> <label for="plus40">45-60 ans</label><br />
+       <input type="radio" name="age" value="plus60" id="plus60" /> <label for="medium25-40">60ans et plus</label><br />
+   </p>
+
+
+    <p>
+        <label for="personne">Nombre de personne :</label>
+        <input type="number" name="personne" id="personne" size="30" required />
+    </p>
+
+    <p>
+            <label for="piece">Nombre de chambre :</label>
+            <input type="number" name="piece" id="cpiece" size="30" required />
+    </p>
+   <p>
+       <label for="pays">De quelle pays venez-vous ?</label><br />
+       <select name="pays" id="pays">
+           <optgroup label="Europe">
+               <option value="france">France</option>
+               <option value="espagne">Espagne</option>
+               <option value="italie">Italie</option>
+               <option value="royaume-uni">Royaume-Uni</option>
+           </optgroup>
+           <optgroup label="Amérique">
+               <option value="canada">Canada</option>
+               <option value="etats-unis">Etats-Unis</option>
+           </optgroup>
+           <optgroup label="Afrique">
+               <option value="Afriquesud">Afrique du Sud</option>
+               <option value="Ghana">Ghana</option>
+               <option value="maroc">Maroc</option>
+               <option value="cameroun">Cameroun</option>
+           </optgroup>
+       </select>
+   </p>
+
+    <p>
+        <label for="nom">Date d'arrivé :</label>
+        <input type="date" name="date" id="date" />
+    </p>
+    <p>
+        <label for="nom">Date de départ :</label>
+        <input type="date" name="date" id="date" />
+    </p>
+
+       <p>
+      Transport dépuis l'aeoroport ou la gare:<br />
+       <input type="radio" name="Transport" value="oui" id="oui" /> <label for="moins15">Oui,S'il vous plait! Passer me cherché a l'arrivé</label><br />
+       <input type="radio" name="Transport" value="non" id="non" /> <label for="medium15-25">Non je viendrais par mes propres moyens</label><br />
+      </p>
+
+      <p>
+      	<label for="nom">Numéro de vol :</label>
+        <input type="number" name="vol" id="vol" />
+      </p>
+
+        <p>
+       <label for="ameliorer">Demande Spécial</label><br />     
+         <textarea name="demande" id="demande"></textarea> 
+       </p>
+    <input type="submit" value="Envoyer" />
+
+</form>
+</body>
+</html>
